@@ -31,12 +31,12 @@ cronometro/
 │       │   └── _reset.scss
 │       ├── components/
 │       │   ├── _buttons.scss
+│       │   ├── _clock.scss
+│       │   ├── _numbers.scss
 │       │   └── _timer.scss
 │       ├── layout/
 │       │   └── _layout.scss
-│       ├── main.scss
-│       └── utils/
-│           └── _variables.scss
+│       └── main.scss
 ├── vite.config.js
 └── yarn.lock
 ```
