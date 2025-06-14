@@ -48,7 +48,7 @@ yarn install
 yarn dev
 ```
 
-Abre `http://localhost:5173` para ver la app en el navegador.
+Abre ` http://localhost:5173/cronometro/` para ver la app en el navegador.
 
 ## 🧠 Funcionalidad
 
