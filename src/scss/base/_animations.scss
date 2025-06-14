@@ -1,0 +1,148 @@
+@keyframes timer {
+  0% { top: 0; }
+  9% { top: 0; }
+  10% { top: -30px; }
+  19% { top: -30px; }
+  20% { top: -60px; }
+  29% { top: -60px; }
+  30% { top: -90px; }
+  39% { top: -90px; }
+  40% { top: -120px; }
+  49% { top: -120px; }
+  50% { top: -150px; }
+  59% { top: -150px; }
+  60% { top: -180px; }
+  69% { top: -180px; }
+  70% { top: -210px; }
+  79% { top: -210px; }
+  80% { top: -240px; }
+  89% { top: -240px; }
+  90% { top: -270px; }
+  99% { top: -270px; }
+  100% { top: -300px; }
+}
+
+@keyframes timertenSec {
+  0% { top: 0; }
+  9.9% { top: 0; }
+  10% { top: -30px ; }
+  19.9% { top: -30px; }
+  20% { top: -60px; }
+  29.9% { top: -60px; }
+  30% { top: -90px; }
+  39.9% { top: -90px; }
+  40% { top: -120px; }
+  49.9% { top: -120px; }
+  50% { top: -150px; }
+  59.9% { top: -150px; }
+  60% { top: -180px; }
+  69.9% { top: -180px; }
+  70% { top: -210px; }
+  79.9% { top: -210px; }
+  80% { top: -240px; }
+  89.9% { top: -240px; }
+  90% { top: -270px; }
+  99.9% { top: -270px; }
+  100% { top: -300px; }
+}
+
+@keyframes timerMin {
+  0% { top: 0; }
+  9.99% { top: 0; }
+  10% { top: -30px; }
+  19.99% { top: -30px; }
+  20% { top: -60px; }
+  29.99% { top: -60px; }
+  30% { top: -90px; }
+  39.99% { top: -90px; }
+  40% { top: -120px; }
+  49.99% { top: -120px; }
+  50% { top: -150px; }
+  59.99% { top: -150px; }
+  60% { top: -180px; }
+  69.99% { top: -180px; }
+  70% { top: -210px; }
+  79.99% { top: -210px; }
+  80% { top: -240px; }
+  89.99% { top: -240px; }
+  90% { top: -270px; }
+  99.99% { top: -270px; }
+  100% { top: -300px; }
+}
+
+@keyframes timertenMin {
+  0% { top: 0; }
+  9.999% { top: 0; }
+  10% { top: -30px; }
+  19.999% { top: -30px; }
+  20% { top: -60px; }
+  29.999% { top: -60px; }
+  30% { top: -90px; }
+  39.999% { top: -90px; }
+  40% { top: -120px; }
+  49.999% { top: -120px; }
+  50% { top: -150px; }
+  59.999% { top: -150px; }
+  60% { top: -180px; }
+  69.999% { top: -180px; }
+  70% { top: -210px; }
+  79.999% { top: -210px; }
+  80% { top: -240px; }
+  89.999% { top: -240px; }
+  90% { top: -270px; }
+  99.999% { top: -270px; }
+  100% { top: -300px; }
+}
+
+@keyframes timerHour {
+  0% { top: 0; }
+  9.9999% { top: 0; }
+  10% { top: -30px; }
+  19.9999% { top: -30px; }
+  20% { top: -60px; }
+  29.9999% { top: -60px; }
+  30% { top: -90px; }
+  39.9999% { top: -90px; }
+  40% { top: -120px; }
+  49.9999% { top: -120px; }
+  50% { top: -150px; }
+  59.9999% { top: -150px; }
+  60% { top: -180px; }
+  69.9999% { top: -180px; }
+  70% { top: -210px; }
+  79.9999% { top: -210px; }
+  80% { top: -240px; }
+  89.9999% { top: -240px; }
+  90% { top: -270px; }
+  99.9999% { top: -270px; }
+  100% { top: -300px; }
+}
+
+@keyframes timertenHour {
+  0% { top: 0; }
+  9.99999% { top: 0; }
+  10% { top: -30px; }
+  19.99999% { top: -30px; }
+  20% { top: -60px; }
+  29.99999% { top: -60px; }
+  30% { top: -90px; }
+  39.99999% { top: -90px; }
+  40% { top: -120px; }
+  49.99999% { top: -120px; }
+  50% { top: -150px; }
+  59.99999% { top: -150px; }
+  60% { top: -180px; }
+  69.99999% { top: -180px; }
+  70% { top: -210px; }
+  79.99999% { top: -210px; }
+  80% { top: -240px; }
+  89.99999% { top: -240px; }
+  90% { top: -270px; }
+  99.99999% { top: -270px; }
+  100% { top: -300px; }
+}
+@keyframes timerArrow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

@@ -1,0 +1,160 @@
+.start,
+.pause,
+.stop {
+  background: -webkit-repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 4px) repeat scroll 0 0%, -webkit-linear-gradient(0deg, #dadada, #fbfbfb 7%, #aaaaaa 32%, #b9b9bb 50%, #ffffff 74%, #8e8e8e);
+  box-shadow: 0 8px 0 -5px rgba(0, 0, 0, 0.2);
+  display: block;
+  height: 35px;
+  left: 50%;
+  margin-left: -30px;
+  position: absolute;
+  top: -66px;
+  width: 51px;
+  z-index: 13;
+}
+
+.start::before,
+.pause::before,
+.stop::before {
+  background: -webkit-linear-gradient(0deg, #dadada, #fbfbfb 7%, #aaaaaa 32%, #b9b9bb 50%, #ffffff 74%, #8e8e8e);
+  content: '';
+  display: block;
+  height: 27px;
+  left: 10px;
+  position: absolute;
+  top: 35px;
+  width: 31px;
+  z-index: -1;
+}
+
+.start:active,
+.pause:active {
+  top: -55px;
+}
+
+.start:active::after,
+.pause:active::after {
+  content: '';
+  height: 15px;
+  left: 0;
+  position: absolute;
+  top: -15px;
+  width: 30px;
+}
+
+.start:active::before,
+.pause:active::before {
+  height: 16px;
+}
+
+.pause {
+  display: none;
+}
+
+.start:target {
+  display: none;
+}
+
+.start:target + .pause {
+  display: block;
+}
+
+.stop {
+  background: -webkit-linear-gradient(0deg, #eaeaea, #fefefe 7%, #aaaaaa 32%, #bababc 50%, #ffffff 74%, #9e9e9e);
+  height: 25px;
+  left: 10px;
+  margin: 0;
+  top: 0;
+  transform: rotate(-41deg);
+  width: 35px;
+}
+
+.stop::before {
+  height: 15px;
+  left: 7px;
+  top: 25px;
+  width: 21px;
+}
+
+.stop:active {
+  left: 13px;
+  top: 4px;
+}
+
+.stop:active::after {
+  content: '';
+  height: 10px;
+  left: 0;
+  position: absolute;
+  top: -10px;
+  width: 30px;
+}
+
+.stop:active::before {
+  height: 10px;
+  left: 7px;
+}
+
+/* CONTROL BUTTONS */
+.start:target ~ .timer-inner .numb,
+.pause:target ~ .timer-inner .numb {
+  animation-name: timer;
+}
+
+.start:target ~ .timer-inner .numb.sec,
+.pause:target ~ .timer-inner .numb.sec {
+  animation-name: timer;
+}
+
+.start:target ~ .timer-inner .numb.tenSec,
+.pause:target ~ .timer-inner .numb.tenSec {
+  animation-name: timertenSec;
+}
+
+.start:target ~ .timer-inner .numb.min,
+.pause:target ~ .timer-inner .numb.min {
+  animation-name: timerMin;
+}
+
+.start:target ~ .timer-inner .numb.tenMin,
+.pause:target ~ .timer-inner .numb.tenMin {
+  animation-name: timertenMin;
+}
+
+.start:target ~ .timer-inner .numb.hour,
+.pause:target ~ .timer-inner .numb.hour {
+  animation-name: timerHour;
+}
+
+.start:target ~ .timer-inner .numb.tenHour,
+.pause:target ~ .timer-inner .numb.tenHour {
+  animation-name: timertenHour;
+}
+
+.start:target ~ .timer-inner .arrow,
+.pause:target ~ .timer-inner .arrow {
+  animation-name: timerArrow;
+}
+
+.pause:target ~ .timer-inner .tenHour,
+.pause:target ~ .timer-inner .hour,
+.pause:target ~ .timer-inner .tenMin,
+.pause:target ~ .timer-inner .min,
+.pause:target ~ .timer-inner .tenSec,
+.pause:target ~ .timer-inner .sec,
+.pause:target ~ .timer-inner .tenMilisec,
+.pause:target ~ .timer-inner .milisec,
+.pause:target ~ .timer-inner .arrow {
+  animation-play-state: paused;
+}
+
+.stop:target ~ .timer .tenHour,
+.stop:target ~ .timer .hour,
+.stop:target ~ .timer .tenMin,
+.stop:target ~ .timer .min,
+.stop:target ~ .timer .tenSec,
+.stop:target ~ .timer .sec,
+.stop:target ~ .timer .tenMilisec,
+.stop:target ~ .timer .milisec {
+  animation-name: reset;
+}
