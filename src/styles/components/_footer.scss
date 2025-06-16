@@ -1,10 +1,13 @@
 @use '../abstracts/variables' as *;
 
 .footer {
-  color: #ffffff;
-  font-size: 0.9rem;
+  color: $color-font-light;
+  font-size: $size-font-sm;
   margin-top: $spacing-lg;
+  padding: $spacing-sm;
+  position: relative;
   text-align: center;
+  width: 100%;
 
   a {
     color: inherit;
@@ -13,5 +16,11 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    font-size: 0.8rem;
   }
 }

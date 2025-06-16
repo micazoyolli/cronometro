@@ -1,21 +1,21 @@
 @use '../abstracts/variables' as *;
 
 .clock {
-  background: #ffffff;
-  border-radius: 50%;
+  background: $color-background;
+  border-radius: $radius-circle;
   box-shadow: $shadow-inset;
-  height: 130px;
+  height: $size-clock;
   left: 50%;
   overflow: hidden;
   position: absolute;
   top: 8px;
   transform: translateX(-50%);
-  width: 130px;
+  width: $size-clock;
 
   &::before {
-    background: #ffffff;
-    border: 1px solid #777777;
-    border-radius: 50%;
+    background: $color-background;
+    border: 1px solid $color-line;
+    border-radius: $radius-circle;
     content: '';
     height: 100px;
     left: 14px;
@@ -26,24 +26,24 @@
   }
 
   .line {
-    background: #777777;
+    background: $color-line;
     height: 100%;
     left: 50%;
-    margin-left: -1px;
+    margin-left: $margin-left-center;
     position: absolute;
     top: 0;
-    width: 1px;
+    width: $size-line;
 
     &::before {
-      background: #777777;
+      background: $color-line;
       content: '';
       height: 100%;
       left: 50%;
-      margin-left: -1px;
+      margin-left: $margin-left-center;
       position: absolute;
       top: 0;
       transform: rotate(36deg);
-      width: 1px;
+      width: $size-line;
     }
 
     &.one {
@@ -59,10 +59,10 @@
 
       &::before,
       &::after {
-        background: #ffffff;
-        border-radius: 50%;
-        color: #777777;
-        content: '10';
+        background: $color-background;
+        border-radius: $radius-circle;
+        color: $color-line;
+        content: '12';
         display: block;
         font-family: sans-serif;
         font-size: 15px;
@@ -78,46 +78,56 @@
 
       &::after {
         bottom: 8px;
-        content: '5';
+        content: '6';
         top: auto;
       }
     }
   }
 
   .arrow {
-    animation-delay: 0;
-    animation-duration: 600s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    background: #666666;
-    border-radius: 50%;
-    height: 20px;
+    background: $color-arrow;
+    border-radius: $radius-circle;
+    height: $size-arrow;
     left: 50%;
     margin: -10px;
     position: absolute;
     top: 50%;
-    width: 20px;
+    width: $size-arrow;
     z-index: 12;
 
     &::before {
-      background: #666666;
+      background: $color-arrow;
       bottom: -20px;
       content: '';
       height: 90px;
       left: 50%;
-      margin-left: -1px;
+      margin-left: $margin-left-center;
       position: absolute;
       width: 2px;
     }
 
     &::after {
       border: 4px solid;
-      border-color: transparent transparent #666666;
+      border-color: transparent transparent $color-arrow;
       content: '';
       left: 50%;
       margin-left: -4px;
       position: absolute;
       top: -55px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .clock {
+    height: 90px;
+    width: 90px;
+
+    &::before {
+      height: 70px;
+      width: 70px;
+      left: 10px;
+      top: 10px;
     }
   }
 }

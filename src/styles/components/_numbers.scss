@@ -1,8 +1,9 @@
-/* NUMBER DESIGN */
+@use '../abstracts/variables' as *;
+
 .timer {
-  background: #ffffff;
-  border-radius: 0 0 15px 15px / 0 0 30px 30px;
-  box-shadow: inset 1px 3px 5px #888899, inset 1px -1px 2px #888899;
+  background: $color-background;
+  border-radius: 0 0 $radius-display $radius-display / 0 0 30px 30px;
+  box-shadow: $shadow-timer;
   left: 20px;
   overflow: hidden;
   position: absolute;
@@ -12,20 +13,20 @@
   div {
     cursor: default;
     float: left;
-    font-size: 36px;
-    height: 36px;
+    font-size: $size-number;
+    height: $size-number;
     position: relative;
     text-align: center;
-    width: 23px;
+    width: $size-number-width;
 
     &::after {
-      background: #7e7e7e;
-      box-shadow: 0 0 7px #333333, 0 0 7px #333333;
+      background: $color-display-line;
+      box-shadow: $shadow-text;
       content: '';
       height: 360px;
       left: 0;
       position: absolute;
-      width: 1px;
+      width: $size-line;
     }
 
     &:first-child::after {
@@ -39,9 +40,9 @@
     animation-timing-function: linear;
 
     &::before {
-      color: #272944;
+      color: $color-bg-dark;
       content: '0 1 2 3 4 5 6 7 8 9 0';
-      font-size: 2.375rem;
+      font-size: $size-font-lg;
       height: 360px;
       left: -2px;
       line-height: 30px;
@@ -51,36 +52,43 @@
       width: 30px;
     }
 
-    &.hour {
-      animation-duration: 100000s;
-    }
-
-    &.min {
-      animation-duration: 1000s;
-    }
-
-    &.milisec {
-      animation-duration: 0.1s;
-    }
-
-    &.sec {
-      animation-duration: 10s;
-    }
-
     &.tenHour {
       animation-duration: 1000000s;
+    }
+
+    &.hour {
+      animation-duration: 100000s;
     }
 
     &.tenMin {
       animation-duration: 10000s;
     }
 
+    &.min {
+      animation-duration: 1000s;
+    }
+
     &.tenSec {
       animation-duration: 100s;
+    }
+
+    &.sec {
+      animation-duration: 10s;
     }
 
     &.tenMilisec {
       animation-duration: 1s;
     }
+
+    &.milisec {
+      animation-duration: 0.1s;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .timer {
+    transform: scale(0.8);
+    left: 10px;
   }
 }
