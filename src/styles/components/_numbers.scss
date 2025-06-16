@@ -1,0 +1,86 @@
+/* NUMBER DESIGN */
+.timer {
+  background: #ffffff;
+  border-radius: 0 0 15px 15px / 0 0 30px 30px;
+  box-shadow: inset 1px 3px 5px #888899, inset 1px -1px 2px #888899;
+  left: 20px;
+  overflow: hidden;
+  position: absolute;
+  top: 165px;
+  width: 212px;
+
+  div {
+    cursor: default;
+    float: left;
+    font-size: 36px;
+    height: 36px;
+    position: relative;
+    text-align: center;
+    width: 23px;
+
+    &::after {
+      background: #7e7e7e;
+      box-shadow: 0 0 7px #333333, 0 0 7px #333333;
+      content: '';
+      height: 360px;
+      left: 0;
+      position: absolute;
+      width: 1px;
+    }
+
+    &:first-child::after {
+      display: none;
+    }
+  }
+
+  .numb {
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    &::before {
+      color: #272944;
+      content: '0 1 2 3 4 5 6 7 8 9 0';
+      font-size: 2.375rem;
+      height: 360px;
+      left: -2px;
+      line-height: 30px;
+      position: absolute;
+      text-align: center;
+      top: 3px;
+      width: 30px;
+    }
+
+    &.hour {
+      animation-duration: 100000s;
+    }
+
+    &.min {
+      animation-duration: 1000s;
+    }
+
+    &.milisec {
+      animation-duration: 0.1s;
+    }
+
+    &.sec {
+      animation-duration: 10s;
+    }
+
+    &.tenHour {
+      animation-duration: 1000000s;
+    }
+
+    &.tenMin {
+      animation-duration: 10000s;
+    }
+
+    &.tenSec {
+      animation-duration: 100s;
+    }
+
+    &.tenMilisec {
+      animation-duration: 1s;
+    }
+  }
+}

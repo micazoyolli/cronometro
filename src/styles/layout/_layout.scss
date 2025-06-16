@@ -1,7 +1,9 @@
+@use '../abstracts/variables' as *;
+
 html,
 body {
   background-color: #272944;
-  font-family: 'DsDigital', Arial, sans-serif;
+  font-family: $font-family-base;
   height: 100%;
   line-height: 1;
   margin: 0;
