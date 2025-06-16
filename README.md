@@ -18,27 +18,37 @@ Cronómetro moderno con diseño visual atractivo, ideal para medir intervalos de
 
 ```
 cronometro/
-├── index.html
-├── package.json
 ├── public/
-│   └── favicon.ico
+│   ├── assets/
+│   │   ├── favicon.ico
+│   │   └── screenshot.png
+│   ├── manifest.json
+│   └── robots.txt
 ├── src/
 │   ├── main.js
-│   └── scss/
+│   └── styles/
+│       ├── abstracts/
+│       │   └── _variables.scss
 │       ├── base/
 │       │   ├── _animations.scss
 │       │   ├── _fonts.scss
 │       │   └── _reset.scss
-│       ├── components/
+│       └── components/
 │       │   ├── _buttons.scss
 │       │   ├── _clock.scss
+│       │   ├── _footer.scss
 │       │   ├── _numbers.scss
 │       │   └── _timer.scss
-│       ├── layout/
+│       └── layout/
 │       │   └── _layout.scss
 │       └── main.scss
-├── vite.config.js
-└── yarn.lock
+├── index.html
+├── .editorconfig
+├── .gitignore
+├── .nvmrc
+├── LICENSE
+├── package.json
+└── vite.config.js
 ```
 
 ## ▶️ Uso
