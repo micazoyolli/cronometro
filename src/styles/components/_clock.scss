@@ -8,7 +8,7 @@
   left: 50%;
   overflow: hidden;
   position: absolute;
-  top: 8px;
+  top: 17px;
   transform: translateX(-50%);
   width: $size-clock;
 
@@ -118,16 +118,3 @@
   }
 }
 
-@media (max-width: 768px) {
-  .clock {
-    height: 90px;
-    width: 90px;
-
-    &::before {
-      height: 70px;
-      width: 70px;
-      left: 10px;
-      top: 10px;
-    }
-  }
-}

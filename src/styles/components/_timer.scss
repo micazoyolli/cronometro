@@ -10,11 +10,11 @@
 
 .wrapper-timer {
   background: linear-gradient(120deg, $color-highlight, $color-clock-base);
-  height: 300px;
+  height: min(90vw, 300px);
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 300px;
+  width: min(90vw, 300px);
   z-index: 2;
 
   .timer-front,
@@ -30,10 +30,10 @@
       #f3f3f3 80%,
       #cacbcd
     );
-    height: 290px;
-    left: 5px;
-    top: 5px;
-    width: 290px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
   }
 
   .timer-inner {
@@ -64,11 +64,5 @@
     top: 110px;
     width: 650px;
     z-index: 20;
-  }
-}
-
-@media (max-width: 768px) {
-  .wrapper-timer {
-    transform: translate(-50%, -50%) scale(0.8);
   }
 }

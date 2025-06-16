@@ -2,12 +2,13 @@
 
 .timer {
   background: $color-background;
-  border-radius: 0 0 $radius-display $radius-display / 0 0 30px 30px;
+  border-radius: 0 0 $radius-display $radius-display;
   box-shadow: $shadow-timer;
+  color: $color-bg-dark;
   left: 20px;
   overflow: hidden;
   position: absolute;
-  top: 165px;
+  top: 160px;
   width: 212px;
 
   div {
@@ -83,12 +84,5 @@
     &.milisec {
       animation-duration: 0.1s;
     }
-  }
-}
-
-@media (max-width: 768px) {
-  .timer {
-    transform: scale(0.8);
-    left: 10px;
   }
 }
