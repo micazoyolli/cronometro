@@ -4,8 +4,8 @@
   "description": "Cronómetro digital con diseño moderno y funcionalidades visuales",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "background_color": "#272944",
+  "theme_color": "#272944",
   "lang": "es",
   "orientation": "portrait",
   "icons": [
