@@ -1,6 +1,6 @@
 # ⏱️ Cronómetro Digital con Vite
 
-Cronómetro moderno con diseño visual atractivo, ideal para medir intervalos de tiempo con precisión y estilo. Proyecto desarrollado con Vite y buenas prácticas.
+Cronómetro digital moderno con diseño visual atractivo, ideal para medir intervalos de tiempo con precisión y estilo. Desarrollado con Vite y buenas prácticas.
 
 <img alt="Cronómetro Digital" src="https://github.com/micazoyolli/cronometro/blob/master/public/assets/screenshot.png" width="300" />
 
