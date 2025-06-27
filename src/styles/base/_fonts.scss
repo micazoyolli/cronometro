@@ -1,9 +1,0 @@
-@use '../abstracts/variables' as *;
-
-@font-face {
-  font-family: $font-family-base;
-  src: url('/assets/fonts/ds-digi-webfont.woff2') format('woff2'),
-      url('/assets/fonts/ds-digi-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
