@@ -1,4 +1,4 @@
-# ⏱️ Cronómetro Digital con Vite
+# ⏱️ Cronómetro Digital
 
 Cronómetro digital moderno con diseño visual atractivo, ideal para medir intervalos de tiempo con precisión y estilo. Desarrollado con Vite y buenas prácticas.
 
