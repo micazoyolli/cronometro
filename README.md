@@ -20,10 +20,12 @@ Cronómetro digital moderno con diseño visual atractivo, ideal para medir inter
 cronometro/
 ├── public/
 │   ├── assets/
-│   │   ├── favicon.ico
-│   │   └── screenshot.png
+│   ├── icons/
+│   ├── favicon.ico
 │   ├── manifest.json
-│   └── robots.txt
+│   ├── meta.jpg
+│   ├── robots.txt
+│   └── sitemap.xml
 ├── src/
 │   ├── main.js
 │   └── styles/
@@ -42,11 +44,11 @@ cronometro/
 │       └── layout/
 │       │   └── _layout.scss
 │       └── main.scss
-├── index.html
 ├── .editorconfig
 ├── .gitignore
 ├── .nvmrc
 ├── LICENSE
+├── index.html
 ├── package.json
 └── vite.config.js
 ```
