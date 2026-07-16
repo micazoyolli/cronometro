@@ -12,7 +12,9 @@ Cronómetro digital moderno con diseño visual atractivo, ideal para medir inter
 
 - HTML5 + SCSS (con estructura modular)
 - JavaScript moderno (ES6+)
-- Vite
+- Vite 8
+- Node 24
+- @micazoyolli/foundation para SEO/build y reduced motion
 
 ## 📦 Estructura del proyecto
 
@@ -58,6 +60,8 @@ cronometro/
 ```bash
 yarn install
 yarn dev
+yarn lint
+yarn build
 ```
 
 Abre ` http://localhost:5173/cronometro/` para ver la app en el navegador.
