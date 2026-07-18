@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /cronometro/
+Sitemap: https://micazoyolli.github.io/cronometro/sitemap.xml
