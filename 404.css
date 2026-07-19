@@ -30,11 +30,14 @@
   margin: 0 0 1.5rem;
 }
 .not-found__link {
+  align-items: center;
   background: #ededed;
   border-radius: 999px;
+  box-sizing: border-box;
   color: #272944;
   display: inline-flex;
   font-weight: 800;
+  justify-content: center;
   min-height: 44px;
   padding: 0.75rem 1.15rem;
   text-decoration: none;
