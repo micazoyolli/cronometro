@@ -75,6 +75,10 @@ Abre ` http://localhost:5173/cronometro/` para ver la app en el navegador.
 
 ---
 
+## Construido con Micazoyolli Foundation
+
+Este proyecto utiliza [Micazoyolli Foundation](https://github.com/micazoyolli/foundation) como infraestructura compartida. Las mejoras de tooling, estructura y despliegue deben realizarse en Foundation para beneficiar a todos los proyectos que la consumen.
+
 ## 👩‍💻 Autora
 
 Una creación de [`<micazoyolli />✨`](https://nadia.dev)
