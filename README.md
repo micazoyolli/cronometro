@@ -1,6 +1,6 @@
 # ⏱️ Cronómetro Digital
 
-Cronómetro digital moderno con diseño visual atractivo, ideal para medir intervalos de tiempo con precisión y estilo. Desarrollado con Vite y buenas prácticas.
+Cronómetro digital para medir intervalos de tiempo con controles de inicio, pausa y reinicio, diseño responsive y una experiencia visual compacta.
 
 <img alt="Cronómetro Digital" src="https://github.com/micazoyolli/cronometro/blob/main/public/assets/screenshot.png" width="300" />
 
@@ -8,65 +8,44 @@ Cronómetro digital moderno con diseño visual atractivo, ideal para medir inter
 
 [Cronómetro Digital Demo](https://micazoyolli.github.io/cronometro/)
 
-## 🚀 Tecnologías usadas
+## 🛠️ Tecnologías
 
-- HTML5 + SCSS (con estructura modular)
-- JavaScript moderno (ES6+)
-- Vite 8
+- HTML5
+- JavaScript
+- SCSS
+- Vite
 - Node 24
-- @micazoyolli/foundation para SEO/build y reduced motion
+- Micazoyolli Foundation para SEO/build y reduced motion
 
-## 📦 Estructura del proyecto
-
-```
-cronometro/
-├── public/
-│   ├── assets/
-│   ├── icons/
-│   ├── favicon.ico
-│   ├── manifest.json
-│   ├── meta.jpg
-│   ├── robots.txt
-│   └── sitemap.xml
-├── src/
-│   ├── main.js
-│   └── styles/
-│       ├── abstracts/
-│       │   └── _variables.scss
-│       ├── base/
-│       │   ├── _animations.scss
-│       │   ├── _fonts.scss
-│       │   └── _reset.scss
-│       └── components/
-│       │   ├── _buttons.scss
-│       │   ├── _clock.scss
-│       │   ├── _footer.scss
-│       │   ├── _numbers.scss
-│       │   └── _timer.scss
-│       └── layout/
-│       │   └── _layout.scss
-│       └── main.scss
-├── .editorconfig
-├── .gitignore
-├── .nvmrc
-├── LICENSE
-├── index.html
-├── package.json
-└── vite.config.js
-```
-
-## ▶️ Uso
+## 📦 Instalación
 
 ```bash
 yarn install
+```
+
+## 🚀 Scripts
+
+```bash
 yarn dev
 yarn lint
 yarn build
+yarn preview
+yarn deploy
 ```
 
-Abre `http://localhost:5173/cronometro/` para ver la aplicación en el navegador.
+Abre `http://localhost:5173/cronometro/` para ver la aplicación en local.
 
-## Despliegue en GitHub Pages
+## 🗂️ Estructura del proyecto
+
+```txt
+public/
+scripts/
+src/
+├── styles/
+└── main.js
+```
+
+## 🚢 Despliegue en GitHub Pages
 
 Este proyecto se publica en GitHub Pages desde la rama `gh-pages`. El comando `yarn deploy` compila la aplicación, limpia archivos `.DS_Store` del build y publica `dist/` usando el CLI de Micazoyolli Foundation sin crear commits de despliegue en `main`.
 
@@ -74,14 +53,11 @@ La configuración `base` de Vite debe conservar la subruta del repositorio: `/cr
 
 ## 🧠 Funcionalidad
 
-- Diseño visual minimalista
-- Controles de inicio, pausa y reinicio
-- Animación de cronómetro tipo reloj
-- Totalmente responsive y accesible
+- Controles de inicio, pausa y reinicio.
+- Animación de cronómetro tipo reloj.
+- Interfaz responsive y accesible.
 
----
-
-## Construido con Micazoyolli Foundation
+## 🧩 Construido con Micazoyolli Foundation
 
 Este proyecto utiliza [Micazoyolli Foundation](https://github.com/micazoyolli/foundation) como infraestructura compartida. Las mejoras de tooling, estructura y despliegue deben realizarse en Foundation para beneficiar a todos los proyectos que la consumen.
 
